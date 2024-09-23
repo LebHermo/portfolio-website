@@ -6,21 +6,24 @@ import {
   IconProjects,
   IconStack,
   IconContact,
-  IconChevron,
+  IconInstagram,
+  IconLinkedin,
+  IconDribble,
+  IconX,
 } from "../assets/Icons";
-import Navdetail from "./Navdetail";
+// import Navdetail from "./Navdetail";
 
 function Navmenu() {
   return (
     <>
-      <div class="pt-6 font-inter flex h-screen flex-col justify-between border-e bg-zinc-900">
-        <div class="px-12 py-6">
-          <span class="grid w-48 aspect-square place-content-center rounded-lg bg-emerald-900 text-xs text-gray-600">
-            <img
+      <div className="py-12 px-12 font-inter h-screen flex flex-col justify-between bg-zinc-900">
+        <div className="">
+          <span className="grid w-48 aspect-square place-content-center rounded-lg bg-emerald-900 text-xs text-gray-600">
+            {/* <img
               class="rounded-lg grayscale"
               src={require("../assets/photo.jpg")}
               alt=""
-            />
+            /> */}
           </span>
 
           <ul className="mt-3 text-sm text-emerald-400 bg-emerald-950 py-1 px-3 rounded-xl">
@@ -34,6 +37,21 @@ function Navmenu() {
             <Navitem text="Stack" isActive={false} icon={<IconStack />} />
             <Navitem text="Contact" isActive={false} icon={<IconContact />} />
           </ul>
+        </div>
+        
+        <div className="flex justify-between text-neutral-700">
+          <a href="#" className="hover:text-emerald-400 hover:scale-150 duration-300">
+            <IconInstagram />
+          </a>
+          <a href="#" className="hover:text-emerald-400 hover:scale-150 duration-300">
+            <IconLinkedin />
+          </a>
+          <a href="#" className="hover:text-emerald-400 hover:scale-150 duration-300">
+            <IconDribble />
+          </a>
+          <a href="#" className="hover:text-emerald-400 hover:scale-150 duration-300">
+            <IconX />
+          </a>
         </div>
       </div>
     </>
