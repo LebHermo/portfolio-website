@@ -5,9 +5,11 @@ import Navmenu from "./components/Navmenu";
 
 function App() {
   return (
-    <div className="App flex">
+    <div className="App flex bg-bgdarkgray">
       <Navmenu />
-      <div>Lorem ipsum dolor sit amet</div>
+      <div className="w-screen px-12 pt-24">
+        <h1 className="text-textlight text-5xl font-semibold">Hello Everyone! Puryagaba mong tanan.</h1>
+      </div>
     </div>
   );
 }

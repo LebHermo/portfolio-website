@@ -16,7 +16,7 @@ import {
 function Navmenu() {
   return (
     <>
-      <div className="py-12 px-12 font-inter h-screen flex flex-col justify-between bg-zinc-900">
+      <div className="text-center py-12 px-12 font-inter h-screen flex flex-col justify-between bg-bglightgray">
         <div className="">
           <span className="grid w-48 aspect-square place-content-center rounded-lg bg-emerald-900 text-xs text-gray-600">
             {/* <img
@@ -27,7 +27,7 @@ function Navmenu() {
           </span>
 
           <ul className="mt-3 text-sm text-emerald-400 bg-emerald-950 py-1 px-3 rounded-xl">
-            <li className="font-normal">Available for Work</li>
+            <li className="font-semibold">Available for Work</li>
           </ul>
 
           <ul className="mt-10 space-y-1">
